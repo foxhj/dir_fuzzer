@@ -16,8 +16,11 @@ options:
   -x EXTENSION, --extension EXTENSION
                         extension to append to payload (e.g., .php,.aspx,.pdf)
 
-Displays responses to status codes 200,204,301,302,307,401,403 by default
+Displays responses to status codes 200,204,301,302,307,401,403 by default.
+EXAMPLE:
+        $ ./dir_fuzzer.py -u http://www.example.com -w raft_small_words.txt -x .php
 ```
+
 ## Usage Example
 
 ![Example](example.png)

@@ -6,7 +6,9 @@ import sys
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Fuzzing tool for fuzzing directories',
-                                     epilog='Displays responses to status codes 200,204,301,302,307,401,403 by default',
+                                     epilog='Displays responses to status codes 200,204,301,302,307,401,403 by default.\n'
+                                            'EXAMPLE:\n'
+                                            '        $ ./dir_fuzzer.py -u http://www.example.com -w raft_small_words.txt -x .php',
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('-u', '--url', type=str, required=True, help='url to fuzz')
     parser.add_argument('-w', '--wordlist', type=str, required=True, help='wordlist to load')
